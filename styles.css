@@ -1,0 +1,73 @@
+body {
+  margin: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card {
+  display: flex;
+  padding: 20px;
+  background-color: burlywood;
+  justify-content: space-around;
+  width: 350px;
+  margin: 0 auto;
+  position: relative;
+  align-items: center;
+  color: #2b2839;
+  border: 8px dashed indianred;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+}
+
+.card:hover {
+  box-shadow: 0px 4px 6px 2px #be002c, 4px 0px 5px #be002c;
+  width: 25%;
+}
+
+.card:active {
+  box-shadow: 0px 4px 6px 2px #02a22a, 4px 0px 5px #02a22a;
+}
+
+.pfp {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 150px;
+}
+
+.pfp:hover {
+  width: 150px;
+  border-radius: 0;
+}
+
+h3:hover {
+  text-decoration: underline;
+}
+
+@keyframes example {
+  0% {
+    /* background-color: red; */
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    /* background-color: yellow; */
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    /* background-color: blue; */
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    /* background-color: green; */
+    left: -200px;
+    top: 200px;
+  }
+  100% {
+    /* background-color: red; */
+    left: -200px;
+    top: 0px;
+  }
+}
